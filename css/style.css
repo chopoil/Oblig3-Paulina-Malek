@@ -1,1 +1,69 @@
+/* Samme font overalt */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* bakgrunn */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header utsende */
+header {
+    background-color: #ffffff;
+    color: #15191e;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Selve logobilde utsende */
+header img {
+    width: 100px; 
+    height: auto; 
+}
+
+/* finn ut av hvordan det blir å ha bilder som nav meny */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #15191e;
+}
+
+/* main bit utsende */
+main {
+    padding: 20px;
+}
+
+/* type forn for h2 */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* type form for paragrafer */
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* footer utsende */
+footer {
+    background-color: #ffffff;
+    color: #15191e;
+    text-align: center;
+    padding: 10px 0;
+}
 
