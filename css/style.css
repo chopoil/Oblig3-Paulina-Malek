@@ -35,28 +35,29 @@ header img {
     height: auto; 
 }
 
-/* main bit utsende */
+/* main bokser utsende */
 main {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
 }
 
-/* type forn for h2 */
-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+@media (min-width: 400px)  {
+    main { 
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-/* type form for paragrafer */
-article p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+@media (min-width: 800px)  {
+    main { 
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
-.column {
-    width: 15%; 
-    float: center; 
-    padding: 10px;
+@media (min-width: 1200px)  {
+    main { 
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 /* utsende av bokser */
@@ -78,6 +79,20 @@ article p {
     right: 0;
     transform: translateY(-50%);
 }
+
+/* type forn for h2 */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* type form for paragrafer */
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
 
 /* footer utsende */
 footer {
