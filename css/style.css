@@ -16,10 +16,21 @@ header {
     color: #15191e;
     text-align: center;
     padding: 20px 0;
+    display: flex; /* husk flexbox for layout */
+    align-items: center; 
+}
+
+/* Style  logo boks */
+.header-logo {
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
 }
 
 /* Selve logobilde utsende */
 header img {
+    margin-left: 5%;
+    float: left;
     width: 100px; 
     height: auto; 
 }
