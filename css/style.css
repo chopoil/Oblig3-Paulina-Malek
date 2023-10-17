@@ -74,11 +74,25 @@ ul {
 }
 
 
-body div main {
+
+
+.index_main {
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+
+.product_main {
+    grid-area: main;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 10px;
     font-weight: bold;
     
@@ -132,15 +146,48 @@ section {
     margin: 25px;
 }
 
+section ul {
+    display: flex;
+    justify-content: end;}
+
 article p {
     font-size: 16px;
     line-height: 1.5;
 }
 
+body div main h3 {
+    margin-right: 15rem;
+    font-size:x-large;
+}
 
-section {
-    padding-left: 20px;
-    padding-right: 20px;
+.eksempelsko-bilde {
+    border-radius: 10px;
+    max-width: 90%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.eksempelsko-lite {
+    border-radius: 20px;
+    max-width: 20%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.alternatives {
+    display: flex;
+    align-items: flex-start;
+}
+.other_shoes {
+    border-radius: 20px;
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 10px;
+
 }
 
 .boxed-paragraph {
@@ -152,7 +199,6 @@ section {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     grid-area: footer;
     background-color: #ffffff;
     color: #15191e;
@@ -177,7 +223,22 @@ footer ul {
     padding: 5px;
 }
 
-/*innstillinger for desktop*/
+.button {
+    background-color: #797979;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgb(255, 213, 0);
+}
+
+.shoesize {
+    font-size: xx-large;
+    padding-left: 20px;
+}
+/*innstillinger for forskjellige mobiler og desktop*/
 @media (min-width:400px) {
     .searchicon {
         display: flex;
@@ -226,6 +287,13 @@ footer ul {
         justify-content: space-between;
         margin-left: 5rem;    
         margin-right: 8rem;    
-    
+    }
+
+    .eksempelsko-bilde {
+        border-radius: 10px;
+        max-width: 50%;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 10px;
     }
 }

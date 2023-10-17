@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="no">
     <!-- Produktside -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaceUp</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <header>
-        <img src="img/laceup logo on white.jpg"  alt="LaceUp Logo">
-        <h1>LaceUp</h1>
-    </header>
-
-    <main>
-        <section>
-            <article>
-                <h2>Welcome to LaceUp</h2>
-                <p>This is the main content of your page.</p>
-            </article>
-        </section>
-        
-        <section>
-            <article>
-                <h2>Our Services</h2>
-                <p>Learn more about the services we offer.</p>
-            </article>
-        </section>
-    </main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LaceUp</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     
-    <footer>
-        <p>&copy; Kontakt oss, om oss, fb og insta</p>
-    </footer>
-</body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-logo">
+                    <a href="index.html"><img src="img/laceup logo on white.jpg" alt="LaceUp Logo"></a>
+                    <a href="index.html"><h1>LaceUp</h1></a>
+    
+                </div>
+                <nav class="grid-item-nav">
+                    <ul>
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Search it up">
+                        </div>
+                        <li><a class="searchicon" href="index.html"><i class="fa-solid fa-magnifying-glass icon"></i></a></li>
+                        
+                        <li><a href="index.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-heart icon"></i></a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <main class="product_main">
+                <h3>Eksempelsko</h3>
+                <img src="img/eksempel sko.jpg" alt="Bilde av eksempelsko" class="eksempelsko-bilde">
+                <!--https://pixabay.com/photos/dumbbells-shoes-sneakers-2465478/-->
+
+                <img src="img/eksempel sko.jpg" alt="Alternative bilder av eksempelsko" class="eksempelsko-lite">
+                <!--https://pixabay.com/photos/dumbbells-shoes-sneakers-2465478/-->
+                
+                <section>
+                    <article class="boxed-paragraph">
+                        <h2>Om skoen</h2>
+                        <p> Sed vel turpis adipiscing penatibus orci neque. Erat sed fermentum ipsum vel quis quam. Nunc etiam dui tortor, non in aliquam lacinia tempor.</p>
+                        <ul>
+                            <li><a class="button" href="index.html">1234 kr</a></li>
+                            <li><a class="button" href="retur.html">Kjøp</a></li>
+                        </ul>
+                    </article>
+                </section>
+                <p class="shoesize"> 38   39   40   41   42   44 </p>
+
+                <div class="alternatives">
+                    <img src="img/terrain shoe.jpg" alt="Other shoes" class="other_shoes">
+                <!--https://pixabay.com/photos/boots-shoes-moss-hiking-shoes-worn-1638873/-->
+                <img src="img/tennis example.jpg" alt="Other shoes" class="other_shoes">
+                <!--https://pixabay.com/photos/tennis-sports-fitness-shoes-7397701/-->
+                </div>
+            </main>
+            <section>
+            
+            </section>
+
+            <footer>
+                <ul>
+                    <li><a href="index.html">Om LaceUp</a></li>
+                    <li><a href="">Kjøpsinformasjon </a></li>
+                    <li><a href="retur.html">Kontakt oss</a></li>
+                    <li><a href="retur.html">Retur</a></li>
+                    <a href="Facebook.url"><i class="fa-brands fa-facebook icon-f"></i></a>
+                    <a href="Instagram.url"><i class="fa-brands fa-instagram icon-i"></i></a>
+                </ul>
+            </footer>
+        </div>
+    </body>
 </html>
 
