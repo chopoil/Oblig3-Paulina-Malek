@@ -23,8 +23,9 @@ header {
     padding: 20px 0;
     display: flex;
     align-items: center;
-    justify-content: left;  
+    justify-content: left; 
 }
+
 
 .header-logo {
     width: 100px;
@@ -43,12 +44,33 @@ header img {
 }
 
 nav {
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-content: flex-end;
+    position: absolute;
+    right: 32px;
 
+}
+/*greier for logo og meny på toppen */
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.search-box {
+    display: none;
+}
+
+.searchicon {
+    display: none;
+}
+
+.icon {
+    color:rgb(10, 5, 30);
+    font-size: 25px;
 }
 
 
@@ -83,37 +105,6 @@ main .box a {
     height: 100%;
 }
 
-section {
-    grid-area: section;
-    font-size: 20px;
-    margin: 25px;
-}
-
-article p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-area: footer;
-    background-color: #ffffff;
-    color: #15191e;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/*greier for logo og meny på toppen */
-ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: nowrap;
-    list-style-type: none;
-}
-
 .button {
     background-color: #fff098;
     border-radius: 10px;
@@ -136,16 +127,92 @@ main a {
 }
 
 section {
+    grid-area: section;
+    font-size: 20px;
+    margin: 25px;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+section {
     padding-left: 20px;
     padding-right: 20px;
 }
- 
+
+.boxed-paragraph {
+    border: 2px solid #4e4e4e; 
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: footer;
+    background-color: #ffffff;
+    color: #15191e;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-f {
+    font-size: 60px;
+    padding: 5px;
+}
+
+.icon-i {
+    font-size: 65px;
+    padding: 5px;
+}
 
 /*innstillinger for desktop*/
-@media (min-width: 1000px) {
-
-    nav {
+@media (min-width:400px) {
+    .searchicon {
         display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media (min-width:600px) {
+    .search-box {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .search-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 150px;
+        font-size: 16px;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .search-box {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .search-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 150px;
+        font-size: 16px;
     }
 
     header {

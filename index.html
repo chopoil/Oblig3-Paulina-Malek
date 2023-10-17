@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaceUp</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -16,10 +18,14 @@
             </div>
             <nav class="grid-item-nav">
                 <ul>
-                    <li><a href="index.html"><img src="img/cart.png" alt="cart Logo" style="width: 30px; height: 30px;"></a></li>
-                    <li><a class="button" href="index.html">Hjem</a></li>
-                    <li><a class="button" href="retur.html">retur</a></li>
-                    <li><a class="button" href="kontakt.html">Kontakt Oss</a></li>
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Search it up">
+                    </div>
+                    <li><a class="searchicon" href="index.html"><i class="fa-solid fa-magnifying-glass icon"></i></a></li>
+                    
+                    <li><a href="index.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-heart icon"></i></a></li>
+                    
                 </ul>
             </nav>
         </header>
@@ -65,15 +71,26 @@
         
 
         <section>
-            <article>
+            <article class="boxed-paragraph">
                 <h2>Om butikken</h2>
                 <p>Sed vel turpis adipiscing penatibus orci neque. Erat sed fermentum ipsum vel quis quam. Nunc etiam dui tortor, non in aliquam lacinia tempor.</p>
             </article>
         </section>
 
         <footer>
-            <p>&copy; Kontakt oss, om oss, fb og insta</p>
+            <ul>
+                <li><a>Om LaceUp</a></li>
+                <li><a>Kjøpsinformasjon </a></li>
+                <li><a>Kontakt oss</a></li>
+                <li><a>Retur</a></li>
+                <i class="fa-brands fa-facebook icon-f"></i>
+                <i class="fa-brands fa-instagram icon-i"></i>
+            </ul>
         </footer>
     </div>
 </body>
 </html>
+
+<!--<li><a class="button" href="index.html">Hjem</a></li>
+                    <li><a class="button" href="retur.html">retur</a></li>
+                    <li><a class="button" href="kontakt.html">Kontakt Oss</a></li>
