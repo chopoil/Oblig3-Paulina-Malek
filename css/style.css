@@ -26,6 +26,34 @@ header {
     justify-content: left; 
 }
 
+.index_main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+
+.product_main {
+    grid-area: main;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+.retur_main {
+    grid-area: main;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
 
 .header-logo {
     width: 100px;
@@ -51,6 +79,24 @@ nav {
     right: 32px;
 
 }
+.info {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #4e4e4e; 
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+.infotekst {
+    font-size: x-large;
+    color:#313131;
+}
+
+.infotekst-produkt {
+    font-size: x-large;
+    color:#313131;
+}
+
 /*greier for logo og meny på toppen */
 ul {
     display: flex;
@@ -73,31 +119,6 @@ ul {
     font-size: 25px;
 }
 
-
-
-
-.index_main {
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    font-weight: bold;
-    
-}
-
-
-.product_main {
-    grid-area: main;
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    font-weight: bold;
-    
-}
-
 main .box {
     background-color: rgb(177, 177, 177);
     border-radius: 10px;
@@ -105,7 +126,6 @@ main .box {
     width: 20%;
     margin: 10px;
     padding: 5.3% 0;
-    /*box-shadow: 5px 5px #5d5409;*/
 
 }
 
@@ -120,7 +140,7 @@ main .box a {
 }
 
 .button {
-    background-color: #fff098;
+    background-color: #9d9d9d;
     border-radius: 10px;
     padding: 20px;
     width: 100%;
@@ -146,9 +166,16 @@ section {
     margin: 25px;
 }
 
+.h3 {
+    font-size: xx-large;
+    padding-left: 5%;
+    font: size 100px;
+}
+
 section ul {
     display: flex;
-    justify-content: end;}
+    justify-content: end;
+}
 
 article p {
     font-size: 16px;
@@ -180,14 +207,16 @@ body div main h3 {
 .alternatives {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 20%;
 }
+
 .other_shoes {
+    display: flex;
     border-radius: 20px;
     max-width: 40%;
     height: auto;
-    margin-right: 20px;
-    margin-left: 10px;
-
+    margin-left: 25px;
+    
 }
 
 .boxed-paragraph {
@@ -196,13 +225,21 @@ body div main h3 {
     border-radius: 10px;
 }
 
+.boxed-paragraph-produkt {
+    border: 2px solid #4e4e4e; 
+    padding: 10px; 
+    border-radius: 10px;
+    
+}
+
 footer {
     display: flex;
-    flex-wrap: wrap;
     grid-area: footer;
     background-color: #ffffff;
     color: #15191e;
+    justify-content: center;
     text-align: center;
+    font-size: large;
     padding: 10px 0;
     font-weight: 600;
 }
@@ -223,27 +260,70 @@ footer ul {
     padding: 5px;
 }
 
-.button {
-    background-color: #797979;
+.skjema {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.inputbox {
+    width: auto;
+    height: auto;
+    font-size: x-large;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.send-box {
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
+    background-color: #909090;
     border-radius: 10px;
     padding: 20px;
     width: 100%;
 }
 
-.button:hover {
+.send-button:hover {
     background-color: rgb(255, 213, 0);
 }
 
 .shoesize {
     font-size: xx-large;
-    padding-left: 20px;
+    padding-left: 30px;
 }
+
+
 /*innstillinger for forskjellige mobiler og desktop*/
 @media (min-width:400px) {
     .searchicon {
         display: flex;
         align-items: flex-end;
     }
+
+}
+
+@media (min-width:467px) {
+    .skjema {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    
+    }
+
 }
 
 @media (min-width:600px) {
@@ -259,6 +339,29 @@ footer ul {
         width: 150px;
         font-size: 16px;
     }
+    
+    .retur_main {
+        grid-area: main;
+        display: flex;
+        justify-content: left;
+        flex-flow: row;
+    }
+
+    .info {
+        border: 2px solid #4e4e4e; 
+        padding: 10px; 
+        border-radius: 10px;
+        width: 50%;
+    } 
+    .inputbox {
+        width:90%;
+        height: auto;
+        font-size: x-large;
+        border-radius: 10px;
+        margin-top: 10px;
+        
+    }
+  
     
 }
 
@@ -286,14 +389,118 @@ footer ul {
         align-items: center;
         justify-content: space-between;
         margin-left: 5rem;    
-        margin-right: 8rem;    
+        margin-right: 8rem; 
+        font-size: xx-large;   
     }
+
+    .header-logo {
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    header img {
+        margin-left: 5%;
+        float: left;
+        width: 200px;
+        height: auto;
+    }
+
 
     .eksempelsko-bilde {
         border-radius: 10px;
-        max-width: 50%;
+        max-width: 40%;
         height: auto;
         margin-right: 20px;
         margin-left: 10px;
+    } 
+
+    .eksempelsko-lite {
+        border-radius: 20px;
+        max-width: 100px;
+        max-height: 100px;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+
+    .other_shoes {
+        display: flex;
+        border-radius: 20px;
+        max-width: 20%;
+        height: auto;
+        margin-left: 30px;
+        
+    }
+
+    .boxed-paragraph-produkt {
+        border: 2px solid #4e4e4e; 
+        padding: 10px; 
+        border-radius: 10px;
+        font-size: x-large;
+    }
+
+    .inputbox {
+        width: 400px;
+        height: auto;
+        font-size: x-large;
+        border-radius: 10px;
+        margin-top: 10px;
+        
+    }
+    
+    footer {
+        display: flex;
+        grid-area: footer;
+        background-color: #ffffff;
+        color: #15191e;
+        justify-content: center;
+        text-align: center;
+        font-size: x-large;
+        padding: 10px 0;
+        font-weight: 600;
+    }
+
+    .bilde_og_info {
+        display: flex;
+        justify-content:center;
+
+    }
+
+    .infotekst-produkt {
+        font-size: xx-large;
+        color:#313131;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        list-style-type: none;
+    }
+    
+    .icon {
+        color:rgb(10, 5, 30);
+        font-size: 40px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: absolute;
+        right: 10%;
+    }
+
+    .boxed-paragraph {
+        border: 2px solid #4e4e4e; 
+        padding: 10px; 
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10px;
     }
 }
