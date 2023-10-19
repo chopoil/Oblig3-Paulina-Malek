@@ -2,12 +2,12 @@
 .container {
     display: grid;
     grid-template-areas:
-        "header header header"
-        "main main main"
-        "section section section"
-        "footer footer footer";
-    grid-template-rows: auto auto auto auto;
-    min-height: 100vh;
+        "header "
+        "main "
+        "section "
+        "footer ";
+        grid-template-rows: auto auto auto auto;
+        min-height: 100vh;
 }
 
 body {
@@ -53,6 +53,8 @@ header {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Header */
@@ -384,6 +386,18 @@ footer ul {
 }
 
 @media (min-width: 1000px) {
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "section section section"
+            "footer footer footer";
+        grid-template-rows: auto auto auto auto;
+        min-height: 100vh;
+    }
+
     .search-box {
         display: flex;
         align-items: flex-end;
