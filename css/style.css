@@ -1,3 +1,4 @@
+/* Hovedelementer */
 .container {
     display: grid;
     grid-template-areas:
@@ -36,7 +37,6 @@ header {
     
 }
 
-
 .product_main {
     grid-area: main;
     display: flex;
@@ -54,6 +54,8 @@ header {
     flex-flow: column;
     justify-content: center;
 }
+
+/* Header */
 
 .header-logo {
     width: 100px;
@@ -79,6 +81,9 @@ nav {
     right: 32px;
 
 }
+
+/* Tekstdeler */
+
 .info {
     display: flex;
     justify-content: center;
@@ -97,7 +102,8 @@ nav {
     color:#313131;
 }
 
-/*greier for logo og meny på toppen */
+/*Greier for logo og meny på toppen */
+
 ul {
     display: flex;
     flex-direction: row;
@@ -119,6 +125,8 @@ ul {
     font-size: 25px;
 }
 
+/* Ting for hovedsiden */
+
 main .box {
     background-color: rgb(177, 177, 177);
     border-radius: 10px;
@@ -139,17 +147,6 @@ main .box a {
     height: 100%;
 }
 
-.button {
-    background-color: #9d9d9d;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-}
-
-.button:hover {
-    background-color: rgb(255, 217, 0);
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -166,11 +163,20 @@ section {
     margin: 25px;
 }
 
-.h3 {
-    font-size: xx-large;
-    padding-left: 5%;
-    font: size 100px;
+/* Diverse knapper */
+
+.button {
+    background-color: #9d9d9d;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
 }
+
+.button:hover {
+    background-color: rgb(255, 217, 0);
+}
+
+/* Mindre viktig tekst, overskrifter og lenker */
 
 section ul {
     display: flex;
@@ -184,8 +190,11 @@ article p {
 
 body div main h3 {
     margin-right: 15rem;
-    font-size:x-large;
+    font-size:xx-large;
+    padding-left: 40px;
 }
+
+/* produktside main */
 
 .eksempelsko-bilde {
     border-radius: 10px;
@@ -225,12 +234,18 @@ body div main h3 {
     border-radius: 10px;
 }
 
+.box_font {
+    font-size: large;
+}
+
 .boxed-paragraph-produkt {
     border: 2px solid #4e4e4e; 
     padding: 10px; 
     border-radius: 10px;
     
 }
+
+/* Footer */
 
 footer {
     display: flex;
@@ -259,6 +274,8 @@ footer ul {
     font-size: 65px;
     padding: 5px;
 }
+
+/* Reurside */
 
 .skjema {
     display: flex;
@@ -303,7 +320,8 @@ footer ul {
 }
 
 
-/*innstillinger for forskjellige mobiler og desktop*/
+/* Innstillinger for forskjellige mobiler, tablets og desktop */
+
 @media (min-width:400px) {
     .searchicon {
         display: flex;
@@ -321,9 +339,7 @@ footer ul {
         margin-top: 10px;
         margin-left: 5%;
         margin-right: 5%;
-    
     }
-
 }
 
 @media (min-width:600px) {
@@ -353,16 +369,18 @@ footer ul {
         border-radius: 10px;
         width: 50%;
     } 
+
     .inputbox {
         width:90%;
         height: auto;
         font-size: x-large;
         border-radius: 10px;
-        margin-top: 10px;
-        
+        margin-top: 10px;  
     }
   
-    
+    .box_font {
+        font-size: x-large;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -407,7 +425,6 @@ footer ul {
         width: 200px;
         height: auto;
     }
-
 
     .eksempelsko-bilde {
         border-radius: 10px;
